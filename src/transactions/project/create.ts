@@ -207,8 +207,8 @@ export function createProjectTx(
         ),
       },
       { lovelace: minTotalFees }
-    )
-    .registerStake(projectStakeAddress);
+    );
+  // .registerStake(projectStakeAddress);
   if (isSponsored) {
     tx = tx.validFrom(txTimeStart);
   }
